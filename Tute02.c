@@ -1,3 +1,23 @@
+#include<stdio.h>
+int main()
+{
+	int distance,amount;
+	printf("Input the distance:");
+	scanf("%d",&distance);
+	if(0<=distance && distance<=30)
+	{
+		amount=distance*50;
+		printf("Paid amount is:%d",amount);
+	}
+	else if(distance>30)
+	{
+		amount=30*50+((distance-30)*40);
+		printf("Paid amount is:%d",amount);
+	}
+	
+	
+	return 0;
+}
 /*Exercise 2 - Selection
 
 Write a program to calculate the amount to be paid for a rented vehicle.
@@ -16,9 +36,4 @@ Amount = 20 x 50 = 1000
 Distance -> 50
 Amount = 30 x 50 + (50-30) x 40 = 2300*/
 
-#include <stdio.h>
 
-int main() {
-  
-  return 0;
-}
